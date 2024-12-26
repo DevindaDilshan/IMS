@@ -1,1 +1,1 @@
-ECHO is on.
+Inventory Management System.
