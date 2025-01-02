@@ -30,9 +30,6 @@ const Inventory = () => {
   return (
     <div className="container mt-5">
       <h2>Inventory</h2>
-      <Link to="/dashboard" className="btn btn-success">
-        Go to dashboard
-      </Link>
       <form onSubmit={handleAddItem} className="mb-3">
         <input
           type="text"
