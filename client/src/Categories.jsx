@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { fetchItems, createItem, deleteItem } from '/services/api';
-import Container from 'react-bootstrap/Container'
 import {Link} from 'react-router-dom';
 
-const Inventory = () => {
+const Categories = () => {
   const [items, setItems] = useState([]);
   const [newItem, setNewItem] = useState({ name: '', quantity: '', price: '', category: '' });
 
@@ -29,31 +28,10 @@ const Inventory = () => {
   };
 
   return (
-    <div className='d-flex'>
-      <div className="container">
-      <h2>Inventory</h2>
+    <div className="container mt-5">
+      <h2>Categories</h2>
       <form onSubmit={handleAddItem} className="mb-3">
-        <input
-          type="text"
-          placeholder="Name"
-          className="form-control"
-          value={newItem.name}
-          onChange={(e) => setNewItem({ ...newItem, name: e.target.value })}
-        />
-        <input
-          type="number"
-          placeholder="Quantity"
-          className="form-control"
-          value={newItem.quantity}
-          onChange={(e) => setNewItem({ ...newItem, quantity: e.target.value })}
-        />
-        <input
-          type="number"
-          placeholder="Price"
-          className="form-control"
-          value={newItem.price}
-          onChange={(e) => setNewItem({ ...newItem, price: e.target.value })}
-        />
+        
         <input
           type="text"
           placeholder="Category"
@@ -61,14 +39,12 @@ const Inventory = () => {
           value={newItem.category}
           onChange={(e) => setNewItem({ ...newItem, category: e.target.value })}
         />
-        <button type="submit" className="btn btn-primary">Add Item</button>
+        <button type="submit" className="btn btn-primary">Add Category</button>
       </form>
       <table className="table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Quantity</th>
-            <th>Price</th>
+            <th>ID</th>
             <th>Category</th>
             <th>Actions</th>
           </tr>
@@ -89,9 +65,8 @@ const Inventory = () => {
           ))}
         </tbody>
       </table>
-      </div>
     </div>
   );
 };
 
-export default Inventory;
+export default Categories;

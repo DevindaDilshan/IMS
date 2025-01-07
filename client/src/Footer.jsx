@@ -1,21 +1,13 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import Img from './assets/react.svg'
 
-function BrandExample() {
+function Footer() {
   return (
     <>
       <Navbar className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">
-            <img
-              alt=""
-              src={Img}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '}
-            IMS
+            Copyright © Devinda Dilshan 2025
           </Navbar.Brand>
         </Container>
       </Navbar>
@@ -23,4 +15,4 @@ function BrandExample() {
   );
 }
 
-export default BrandExample;
+export default Footer;
