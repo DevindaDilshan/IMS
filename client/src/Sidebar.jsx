@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="d-flex flex-column vh-100 bg-dark" style={{ width: "250px" }}>
+    <div className="vh-100 bg-dark" style={{ width: "200px" }}>
       <div className="text-white text-center">
         <h1>IMS</h1>
       </div>

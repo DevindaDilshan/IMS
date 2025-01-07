@@ -8,7 +8,7 @@ const Dashboard = () => {
   return (
     <Container>
       <h2>Dashboard</h2>
-      <Stack gap={5} direction='horizontal'>
+      <Stack gap={4} direction='horizontal'>
       <DashCard title="Total Categories" num="5"/>
       <DashCard title="Total Products" num="7"/>
       <DashCard title="Total Admins" num="1"/>
